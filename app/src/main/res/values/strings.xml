@@ -7,4 +7,8 @@
     <string name="numero">Numéro</string>
     <string name="num">Numéro</string>
     <string name="lancer">Lancer</string>
+    <string name="temps_attente_s">Temps attente (s)</string>
+    <string name="nombre_de_fois">Nombre de fois</string>
+    <string name="message_envoyer">Message à envoyer</string>
+    <string name="num_ro">Numéro</string>
 </resources>
