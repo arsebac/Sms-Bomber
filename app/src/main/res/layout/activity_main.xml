@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/num"
+        android:hint="@string/num"
+        android:layout_marginTop="34dp"
+        android:maxLength="10"
+        android:phoneNumber="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msgToSend"
+        android:hint="Message à envoyer"
+        android:layout_below="@+id/num"
+        android:layout_alignLeft="@+id/num"
+        android:layout_alignStart="@+id/num"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/nbIteration"
+        android:hint="Nombre de fois"
+        android:layout_above="@+id/timeSleep"
+        android:layout_alignLeft="@+id/num"
+        android:layout_alignStart="@+id/num"
+        android:layout_marginBottom="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/timeSleep"
+        android:hint="Temps attente (s)"
+        android:layout_above="@+id/buttonStart"
+        android:layout_alignLeft="@+id/nbIteration"
+        android:layout_alignStart="@+id/nbIteration"
+        android:layout_marginBottom="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lancer"
+        android:id="@+id/buttonStart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp" />
+</RelativeLayout>
